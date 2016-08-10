@@ -18,11 +18,12 @@ public class SignInServlet extends HttpServlet {
     public void doPost (HttpServletRequest request,
                         HttpServletResponse response) throws IOException {
 
-        String login = request.getParameter("login");
-        String password = request.getParameter("password");
-        response.getWriter().println("Authorized:" + login);
-        if (accountService.getUserByLogin(login).getLogin() == login){
-            response.getWriter().println("Authorized:" + login);
+       String login = request.getParameter("login");
+       String password = request.getParameter("password");
+        response.getWriter().println("Authorized:" + login );
+//        if (accountService.getUserByLogin(login).getLogin().equals(login)  ){
+//            response.setContentType("text/html;charset=utf-8");
+//            response.getWriter().println("Authorized:" + login);
         }
 
 
@@ -31,4 +32,4 @@ public class SignInServlet extends HttpServlet {
     }
 
 
-}
+//}
