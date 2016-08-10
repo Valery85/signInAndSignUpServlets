@@ -3,12 +3,11 @@ package accounts;
 public class UserProfile {
     private String login;
     private String pass;
-    private String email;
 
-    public UserProfile(String login, String pass, String email){
+    public UserProfile(String login, String pass) {
         this.login = login;
         this.pass = pass;
-        this.email = email;
+
     }
 
     public String getLogin() {
@@ -18,8 +17,6 @@ public class UserProfile {
     public String getPass() {
         return pass;
     }
-
-    public String getEmail() {
-        return email;
-    }
 }
+
+
